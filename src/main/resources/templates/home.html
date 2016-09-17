@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="LogUsuario">
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.js"></script>
+        <script src="./js/controller.js"></script>
+    </head>
+    
+    <body ng-controller="ControllerUsuario">
+        <h1>Al fin funciona :D  </h1>
+        
+        Email <input type="text" ng-model="email"/>
+        Password <input type="text" ng-model="password"/>
+        <button ng-click="buscarUsuario()">Login</button>
+        <ul>
+            <li>
+                <h1>{{encontrado.idUsuario}}</h1>
+                <h2>{{encontrado.nombre}}</h2>
+            </li>
+        </ul>
+        
+            
+    </body>
+</html>
